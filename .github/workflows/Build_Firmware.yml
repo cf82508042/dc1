@@ -44,7 +44,7 @@ jobs:
       run: |
         echo "::set-env name=bin_output_path::/home/runner/work/bin/"
         bin_output_path=/home/runner/work/bin/
-        cd /home/runner/work/phicomm_dc1-esphome/phicomm_dc1-esphome/yaml
+        cd /home/runner/work/yaml
 
         mkdir ${bin_output_path}
         for f in *.yaml

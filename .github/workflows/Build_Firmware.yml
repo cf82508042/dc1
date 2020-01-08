@@ -3,9 +3,9 @@ name: Build Firmware
 on: 
   release:
     types: [published]
- # push:
- #   branches: 
- #     - master
+  push:
+    branches: 
+      - master
 
 #  schedule:
 #    - cron: 0 8 * * 5
@@ -36,9 +36,9 @@ jobs:
         cat9554_dir=${site_package_path}/esphome/components/cat9554
         mkdir $cat9554_dir
         cd $cat9554_dir
-        curl -O https://raw.githubusercontent.com/Samuel-0-0/phicomm_dc1-esphome/master/esphome/components/cat9554/__init__.py
-        curl -O https://raw.githubusercontent.com/Samuel-0-0/phicomm_dc1-esphome/master/esphome/components/cat9554/cat9554.cpp
-        curl -O https://raw.githubusercontent.com/Samuel-0-0/phicomm_dc1-esphome/master/esphome/components/cat9554/cat9554.h
+        curl -O https://raw.githubusercontent.com/cf82508042/dc1/master/esphome/components/cat9554/__init__.py
+        curl -O https://raw.githubusercontent.com/cf82508042/dc1/master/esphome/components/cat9554/cat9554.cpp
+        curl -O https://raw.githubusercontent.com/cf82508042/dc1/master/esphome/components/cat9554/cat9554.h
 
     - name: Build
       run: |

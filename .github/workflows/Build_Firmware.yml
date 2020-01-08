@@ -47,7 +47,7 @@ jobs:
         cd /home/runner/work/dc1/dc1/yaml
 
         mkdir ${bin_output_path}
-        for f in *.yaml
+        for f in dc1_homeassistant_api.yaml
         do
           basename=`basename $f .yaml`
           echo "Compiling $f..."

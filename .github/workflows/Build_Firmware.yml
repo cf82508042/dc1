@@ -14,7 +14,7 @@ on:
 
 jobs:
   build:
-    runs-on: ubuntu-18.04
+    runs-on: ubuntu-latest
 
     steps:
     - name: Checkout
@@ -44,7 +44,7 @@ jobs:
       run: |
         echo "::set-env name=bin_output_path::/home/runner/work/bin/"
         bin_output_path=/home/runner/work/bin/
-        cd /home/runner/work/yaml
+        cd /home/runner/work/dc1/dc1/yaml
 
         mkdir ${bin_output_path}
         for f in *.yaml
